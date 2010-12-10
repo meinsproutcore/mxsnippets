@@ -1,0 +1,26 @@
+mxsnippets
+==========
+
+Simple sproutcore snippet system. 
+There are also some js-snippets (useful in sinasi-mode).
+
+usage
+=====
+
+M-x sc.*
+M-x js.*
+
+Snippets
+========
+
+sc.container ~> SC.ContainerView...
+sc.label     ~> SC.LabelView...
+sc.button    ~> SC.ButtonView...
+sc.list      ~> SC.ListView...
+sc.scroll    ~> SC.ScrollView...
+sc.segmented ~> SC.SegmentedView...
+sc.toolbar   ~> SC.ToolbarView...
+
+sc.record    ~> SC.Record.attr(...
+
+sc.function  ~> function(){}; 
