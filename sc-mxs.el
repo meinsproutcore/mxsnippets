@@ -57,13 +57,22 @@
   )
 )
 
-
 (defun sc.record ()
-  "Insert a SC.ButtonView at cursor position."
+  "Insert a SC.Record at cursor position."
   (interactive)
-  (insert ": SC.Record.attr(String, { isRequired: YES, defaultValue: 0 }),"
-  )
-)
+  (insert ": SC.Record.attr(TYPE, { isRequired: YES, defaultValue: VALUE }),"))
+
+
+(defun sc.record.string ()
+  "Insert a SC.Record at cursor position."
+  (interactive)
+  (insert ": SC.Record.attr(String, { isRequired: NO, defaultValue: '' }),"))
+
+
+(defun sc.record.number ()
+  "Insert a SC.Record at cursor position."
+  (interactive)
+  (insert ": SC.Record.attr(Number, { isRequired: No, defaultValue: 0 }),"))
 
 
 (defun sc.function ()
