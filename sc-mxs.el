@@ -46,16 +46,29 @@
         value: 'one'
     }),"))
 
-(defun sc.toolbar ()
-  "Insert a SC.ToolbarView at cursor position."
+(defun sc.toolbar.top ()
+  "Insert a SC.(Top)ToolbarView at cursor position."
   (interactive)
   (insert ": SC.ToolbarView.design({
       layout: { top: 0, left: 0, right: 0, height: 36 },
       childViews: ''.w(),
-      anchorLocation: SC.ANCHOR_ TOP BOTTOM     
+      anchorLocation: SC.ANCHOR_TOP
     }),"
   )
 )
+
+
+(defun sc.toolbar.bottom ()
+  "Insert a SC.(Bottom)ToolbarView at cursor position."
+  (interactive)
+  (insert ": SC.ToolbarView.design({
+      layout: { bottom: 0, left: 0, right: 0, height: 36 },
+      childViews: ''.w(),
+      anchorLocation: SC.ANCHOR_BOTTOM
+    }),"
+  )
+)
+
 
 (defun sc.record ()
   "Insert a SC.Record at cursor position."
