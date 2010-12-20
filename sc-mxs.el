@@ -76,6 +76,12 @@
   (insert ": SC.Record.attr(TYPE, { isRequired: YES, defaultValue: VALUE }),"))
 
 
+(defun sc.record.boolean ()
+  "Insert a SC.Record at cursor position."
+  (interactive)
+  (insert ": SC.Record.attr(Boolean, { isRequired: NO, defaultValue: true }),"))
+
+
 (defun sc.record.string ()
   "Insert a SC.Record at cursor position."
   (interactive)
